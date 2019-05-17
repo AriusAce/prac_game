@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Memory Game</string>
+    <string name="title">Memory Game</string>
+    <string name="play_button">Play</string>
+    <string name="setting_button">Setting</string>
+    <string name="leaderboard_button">Leaderboard</string>
+    <string name="default_Score">Score: </string>
+    <string name="default_time">Time: 180</string>
+    <string name="result_title">Game Over</string>
+    <string name="result_hint">Enter your name</string>
+    <string name="result_option_menu">Menu</string>
+    <string name="result_option_share">share</string>
+    <string name="result_option_restart">Replay</string>
+    <string name="result_option_save">save</string>
+    <string name="leaderboard_title">LeaderBoard</string>
+    <string name="placeholder_text">Testing TextView</string>
+    <string name="title_lb_name">User name</string>
+    <string name="title_lb_score">Score</string>
+    <string name="title_lb_round">Round</string>
+    <string name="setting_title">Setting</string>
+    <string name="setting_sound">Sound</string>
+    <string name="setting_sound_sfx">Sound SFX</string>
+    <string name="setting_swipe">Swipe to move</string>
+    <string name="setting_lang_title">Language</string>
+    <string name="setting_lang_default">English</string>
+    <string name="setting_lang_vn">Vietnamese</string>
+
+</resources>

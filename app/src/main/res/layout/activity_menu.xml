@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/title_padding"
+            android:text="@string/title"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold"
+            android:fontFamily="@font/digitalt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="240dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/option_margin"
+            android:background="@drawable/option_back"
+            android:fontFamily="@font/digitalt"
+            android:onClick="handle_menu_option"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/play_button"
+            android:textSize="@dimen/option_size" />
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="240dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/option_margin"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/option_back"
+            android:fontFamily="@font/digitalt"
+            android:onClick="handle_menu_option"
+            android:text="@string/setting_button"
+            android:textSize="@dimen/option_size" />
+
+        <Button
+            android:id="@+id/btn_lb"
+            android:layout_width="240dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/option_margin"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/option_back"
+            android:fontFamily="@font/digitalt"
+            android:onClick="handle_menu_option"
+            android:text="@string/leaderboard_button"
+            android:textSize="@dimen/option_size" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

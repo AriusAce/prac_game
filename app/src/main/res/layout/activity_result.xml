@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity"
+    android:orientation="vertical"
+    android:weightSum="5">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/result_title"
+        android:gravity="center"
+        android:textSize="@dimen/title_size"
+        android:fontFamily="@font/digitalt"
+        android:textColor="@color/colorPrimary"/>
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/option_size"
+        android:fontFamily="@font/digitalt"
+        android:textColor="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/board_padding"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="@dimen/title_padding"
+            android:fontFamily="@font/digitalt"
+            android:hint="@string/result_hint"
+            android:textColor="@color/black"
+            android:textSize="@dimen/hint_size" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="@dimen/board_padding"
+            android:background="@drawable/option_back"
+            android:fontFamily="@font/digitalt"
+            android:onClick="handleResultButton"
+            android:text="@string/result_option_save"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/hint_size" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <Button
+            android:id="@+id/btn_replay"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="150dp"
+            android:background="@drawable/option_back"
+            android:fontFamily="@font/digitalt"
+            android:gravity="center"
+            android:onClick="handleResultButton"
+
+            android:text="@string/result_option_restart"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/option_size" />
+
+        <Button
+            android:id="@+id/btn_share"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="150dp"
+            android:background="@drawable/option_back"
+            android:fontFamily="@font/digitalt"
+            android:gravity="center"
+            android:onClick="handleResultButton"
+            android:text="@string/result_option_share"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/option_size" />
+
+        <Button
+            android:id="@+id/btn_menu"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/option_back"
+            android:fontFamily="@font/digitalt"
+            android:gravity="center"
+            android:onClick="handleResultButton"
+            android:text="@string/result_option_menu"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/option_size" />
+    </RelativeLayout>
+</LinearLayout>

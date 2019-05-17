@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:fontFamily="@font/digitalt"
+        android:text="@string/setting_title"
+        android:padding="@dimen/title_padding"/>
+
+    <CheckBox
+        android:id="@+id/cb_sound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setting_sound"
+        android:textSize="@dimen/option_size"
+        android:checked="true"
+        android:button="@null"
+        android:layout_marginBottom="@dimen/title_padding"
+        android:paddingEnd="@dimen/title_size"
+        android:paddingStart="@dimen/title_size"
+        android:fontFamily="@font/digitalt"
+        android:textColor="@color/colorPrimary"
+        android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+        android:buttonTint="@color/colorPrimary"
+        android:onClick="handleSettingClick"/>
+
+    <CheckBox
+        android:id="@+id/cb_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setting_swipe"
+        android:textSize="@dimen/option_size"
+        android:checked="true"
+        android:button="@null"
+        android:layout_marginBottom="@dimen/title_padding"
+        android:paddingEnd="@dimen/title_size"
+        android:paddingStart="@dimen/title_size"
+        android:fontFamily="@font/digitalt"
+        android:textColor="@color/colorPrimary"
+        android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+        android:buttonTint="@color/colorPrimary"
+        android:onClick="handleSettingClick"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
